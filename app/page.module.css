@@ -1,0 +1,62 @@
+.headerdiv {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to left, rgba(36,35,111,255) , rgba(43,58,149,255));
+    direction: rtl;
+}
+
+.headerupperdiv {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin-right: 5%;
+    top: 30px;
+}
+
+.headerlogodiv {
+    position: relative;
+    width: 200px;
+    height: 45px;
+    float: right;
+}
+
+.headernamespan {
+    position: relative;
+    color: white;
+    top: -15px;
+    left: -10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.headermenudiv {
+    position: relative;
+    width: 600px;
+    float: right;
+    margin-right: 150px;
+}
+
+.headermenuspan {
+    position: relative;
+    width: 80;
+    display: block;
+    color: white;
+    font-size: large;
+    float: right;
+    margin-right: 50px;
+    top:17px;
+}
+
+.headersignindiv {
+    position: relative;
+    width:200px;
+    float: right;
+    margin-right: 300px;
+}
+
+.headersigninbutton {
+    width:90px;
+    float: right;
+    margin-right: 10px;
+}
