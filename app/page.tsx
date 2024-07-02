@@ -22,54 +22,93 @@ export default function Home() {
             <button className={styles.headersigninbutton}>ورود</button>
           </div>
         </div>
-        <div>
-          <div>
-            <div>
-              <img></img>
-            </div>
-            <div>
-              <h3>فروشگاه خرید گیفت کارت</h3>
+        <div className={styles.headerlowerdiv}>
+          <div className={styles.headerlowerrightdiv}>
+              <Image className={styles.headerimg} src={"/giftcard.png"} alt={"icon"} width={350} height={200}></Image>
+            <div className={styles.headernamediv}>
+              <h1>فروشگاه خرید گیفت کارت</h1>
               <br></br>
-              <h5>اعتماد شما اعتبار ماست</h5>
+              <h3>اعتماد شما اعتبار ماست</h3>
             </div>
           </div>
-          <div>
-            <img></img>
-            <span></span>
-            <br></br>
-            <span></span>
-            <br></br>
-            <span></span>
-            <br></br>
-            <span></span>
+          <div className={styles.headerlowerleftdiv}>
+            <Image className={styles.headercontactimg} src={"/phone.png"} alt={"icon"} width={50} height={50}></Image>
+            <div className={styles.headercontactspandiv}>
+              <span className={styles.headercontactspan}>شماره تماس :</span>
+              <br></br>
+              <span className={styles.headercontactspan}>09031974483</span>
+              <br></br>
+              <span className={styles.headercontactspan}>شماره تلگرام :</span>
+              <br></br>
+              <span className={styles.headercontactspan}>09031974483</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div>
-        <div>
-          <img></img>
-          <button></button>
+      <div className={styles.productsdiv}>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/apple.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>آیتونز اپل</button>
         </div>
-        <div>
-          <img></img>
-          <button></button>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/telegram.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>تلگرام پرمیوم</button>
         </div>
-        <div>
-          <img></img>
-          <button></button>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/google.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>گوگل پلی</button>
         </div>
-        <div>
-          <img></img>
-          <button></button>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/steam.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>استیم (steam)</button>
         </div>
-        <div>
-          <img></img>
-          <button></button>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/xbox.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>ایکس باکس(xbox)</button>
         </div>
-        <div>
-          <img></img>
-          <button></button>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/playstation.png"} alt={"icon"} width={140} height={120} style={{marginTop: "17px", marginBottom:"10px"}}></Image>
+          <button className={styles.productbutton}>پلی استیشن</button>
+        </div>
+        <div className={styles.productline}></div>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/spotify.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>اسپاتیفای (spotify)</button>
+        </div>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/mastercard.png"} alt={"icon"} width={140} height={120} style={{marginTop: "17px", marginBottom:"10px"}}></Image>
+          <button className={styles.productbutton}>مستر کارت مجازی</button>
+        </div>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/visa.png"} alt={"icon"} width={140} height={80} style={{marginTop: "37px", marginBottom:"30px"}}></Image>
+          <button className={styles.productbutton}>ویزا کارت مجازی</button>
+        </div>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/amazon.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>آمازون (amazon)</button>
+        </div>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/netflix.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>نتفلیکس(netflix)</button>
+        </div>
+        <div className={styles.productdiv}>
+          <Image className={styles.productimg} src={"/nintendo.png"} alt={"icon"} width={140} height={140}></Image>
+          <button className={styles.productbutton}>نینتندو (nintendo)</button>
+        </div>
+      </div>
+      <div className={styles.introsdiv}>
+        <div className={styles.introdiv}>
+          <Image className={styles.productimg} src={"/quick.png"} alt={"icon"} width={75} height={75}></Image>
+          <span style={{position:"relative", top:"32.5px"}}>کد محصول بلافاصله پس از خرید تحویل داده میشود.<br></br>از قسمت گزارش خرید تمامی کد های خریداری شده را مشاهده نمایید.</span>
+        </div>
+        <div className={styles.introdiv}>
+          <Image className={styles.productimg} src={"/precision.png"} alt={"icon"} width={75} height={75}></Image>
+          <span style={{position:"relative", top:"32.5px"}}>خواهشمند است در انتخاب کالا دقت فرمایید; کد تحویل داده شده تعویض و یا مرجوع نمی گردد.</span>
+        </div>
+        <div className={styles.introdiv}>
+          <Image className={styles.productimg} src={"/info.png"} alt={"icon"} width={75} height={75}></Image>
+          <span style={{position:"relative", top:"32.5px"}}>جهت تماس با ما میتوانید روش های متفاوتی استفاده کنید.</span>
         </div>
       </div>
     </main>
