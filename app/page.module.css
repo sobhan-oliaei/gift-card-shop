@@ -195,3 +195,58 @@
     padding-bottom: 10px;
     border-bottom-style: solid;
 }
+
+.contactdiv {
+    position: relative;
+    direction: rtl;
+    width: 100%;
+    float: right;
+    height: 350px;
+    background-image: linear-gradient(to right, rgba(36,35,111,255) , rgba(43,58,149,255));
+}
+
+.contactinnerdiv {
+    position: relative;
+    float: right;
+    margin-right: 300px;
+    width: 300px;
+    margin-top: 45px;
+}
+
+.contactinnerinnerdiv {
+    position: relative;
+    float: right;
+    width: 100%;
+}
+
+.contactinnerimg {
+    position: relative;
+    float: right;
+}
+
+.contactinnerspandiv {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 70px;
+}
+
+.contactinnerbigspan {
+    position: relative;
+    color: white;
+}
+
+.contactinnersmallspan {
+    position: relative;
+    color: white;
+}
+
+.mapdiv {
+    position: relative;
+    width: 500px;
+    margin-right: 150px;
+    float: right;
+    height: 300px;
+    background-color: red;
+    margin-top: 25px;
+}
