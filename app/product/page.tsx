@@ -46,18 +46,41 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.productdiv}>
+        <div className={styles.productinfopickdiv}>
+          <div className={styles.productinfodiv}>
+            <h2>خرید گیفت کارت آیتونز</h2>
+            <p>خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری خرید گیفت کارت آیتونز با تحویل فوری</p>
+          </div>
+          <div className={styles.productpickdiv}>
+            <div className={styles.productpicksrightdiv}>
+              <span className={styles.productpicksupperspan}>آیتونز آمریکا</span>
+              <br></br>
+              <span className={styles.productpickslowerspan}>10 دلار</span>
+            </div>
+            <div className={styles.productpicksleftdiv}>
+              <span className={styles.productpicksupperspan}>آیتونز آمریکا</span>
+              <br></br>
+              <span className={styles.productpickslowerspan}>25 دلار</span>
+            </div>
+            <div className={styles.productpicksrightdiv}>
+              <span className={styles.productpicksupperspan}>آیتونز آمریکا</span>
+              <br></br>
+              <span className={styles.productpickslowerspan}>10 دلار</span>
+            </div>
+            <div className={styles.productpicksleftdiv}>
+              <span className={styles.productpicksupperspan}>آیتونز آمریکا</span>
+              <br></br>
+              <span className={styles.productpickslowerspan}>25 دلار</span>
+            </div>
+          </div>
+        </div>
+        <div className={styles.productimgdiv}>
+          <Image src={"/giftcard-apple.png"} alt={"icon"} width={500} height={500}></Image>
+        </div>
+      </div>
       <div>
-        <div>
 
-        </div>
-        <div>
-          <div>
-
-          </div>
-          <div>
-            
-          </div>
-        </div>
       </div>
     </main>
   );
