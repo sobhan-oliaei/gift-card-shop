@@ -79,8 +79,18 @@ export default function Home() {
           <Image src={"/giftcard-apple.png"} alt={"icon"} width={500} height={500}></Image>
         </div>
       </div>
-      <div>
-
+      <div className={styles.paymentdiv}>
+        <div className={styles.paymentinfodiv}>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div className={styles.paymentpaydiv}>
+          <div></div>
+          <div></div>
+        </div>
+        <div className={styles.paymenthelpdiv}></div>
       </div>
     </main>
   );
