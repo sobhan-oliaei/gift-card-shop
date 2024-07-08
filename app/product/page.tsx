@@ -81,10 +81,22 @@ export default function Home() {
       </div>
       <div className={styles.paymentdiv}>
         <div className={styles.paymentinfodiv}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <span>قیمت واحد :</span>
+            <span>200000</span>
+          </div>
+          <div>
+            <span>محصول : </span>
+            <span>گیفت کارت آیتونز آمریکا</span>
+          </div>
+          <div>
+            <span>تعداد :</span>
+            <input></input>
+          </div>
+          <div>
+            <span>قیمت کل :</span>
+            <span>200000</span>
+          </div>
         </div>
         <div className={styles.paymentpaydiv}>
           <div></div>
