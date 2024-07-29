@@ -1,7 +1,21 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useState, useEffect } from "react";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+  const [productNumber, setProductNumber] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(200000);
+  useEffect(() => {
+    setTotalPriceState(productNumber)
+  }, [productNumber]);
+
+  function setTotalPriceState(pN: number) {
+    setTotalPrice(200000 * pN);
+  }
+
   return (
     <main>
       <div className={styles.headerdiv}>
@@ -11,7 +25,7 @@ export default function Home() {
             <span className={styles.headernamespan}>فروش گیفت کارت</span>
           </div>
           <div className={styles.headermenudiv}>
-            <span className={styles.headermenuspan}>خانه</span>
+            <span className={styles.headermenuspan} onClick={() => router.push('/')}>خانه</span>
             <span className={styles.headermenuspan}>آموزش ها</span>
             <span className={styles.headermenuspan}>اخبار و تخفیف ها</span>
             <span className={styles.headermenuspan}>اینستاگرام ما</span>
@@ -81,28 +95,28 @@ export default function Home() {
       </div>
       <div className={styles.paymentdiv}>
         <div className={styles.paymentinfodiv}>
-          <div>
-            <span>قیمت واحد :</span>
-            <span>200000</span>
-          </div>
-          <div>
-            <span>محصول : </span>
-            <span>گیفت کارت آیتونز آمریکا</span>
-          </div>
-          <div>
-            <span>تعداد :</span>
-            <input></input>
-          </div>
-          <div>
-            <span>قیمت کل :</span>
-            <span>200000</span>
-          </div>
+          <span className={styles.paymentinfospan} style={{marginTop: "0"}}>قیمت واحد : 200000</span>
+          <br></br>
+          <span className={styles.paymentinfospan}>محصول : گیفت کارت آیتونز آمریکا</span>
+          <br></br>
+          <span className={styles.paymentinfospan}>تعداد :</span>
+          <input className={styles.paymentinfoinput} type="number" max="3" min="1" step="1" value={productNumber} onChange={(e) => { setProductNumber(Number(e.target.value)) }}></input>
+          <br></br>
+          <span className={styles.paymentinfospan} style={{borderBottomStyle: "solid", paddingBottom: "5px", borderColor: "#3572EF"}}>قیمت کل : {totalPrice}</span>
         </div>
         <div className={styles.paymentpaydiv}>
           <div></div>
           <div></div>
         </div>
-        <div className={styles.paymenthelpdiv}></div>
+      </div>
+      <div className={styles.paymenthelpdiv}>
+        <span>کلیه کارت های بانکی عضو شبکه شتاب برای تمامی بانک ها امکان پرداخت دارند.</span>
+        <br></br>
+        <span>این وبسایت دارای نماد اعتماد الکترونیکی از وزارت بازرگانی می باشد.</span>
+        <br></br>
+        <span>تایید تلفن همراه و تلفن ثابت در این وبسایت الزامی میباشد.</span>
+        <br></br>
+        <span>خواهشمند است در انتخاب کالا دقت فرمایید؛ کد تحویل داده شده تعویض ویا مرجوع نمی گردد.</span>
       </div>
     </main>
   );
