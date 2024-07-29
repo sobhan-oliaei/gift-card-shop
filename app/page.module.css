@@ -135,7 +135,7 @@
 
 .productdiv {
     position: relative;
-    width: 150px;
+    width: 140px;
     float: right;
     border-right-style: solid;
     border-left-style: solid;
@@ -159,8 +159,7 @@
     position: relative;
     margin-right: 2.5px;
     width: 145px;
-    font-size: 17px;
-    font-weight:bold;
+    font-size: 14px;
     margin-top: 30px;
     float: right;
     padding: 6px;
@@ -196,6 +195,7 @@
     margin-right: 5%;
     float: right;
     text-align: center;
+    font-size: 12px;
     padding-bottom: 10px;
     border-bottom-style: solid;
 }

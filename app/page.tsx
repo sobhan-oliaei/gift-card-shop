@@ -143,7 +143,6 @@ export default function Home() {
         </div>
         <Image className={styles.mapdiv} src={"/googlemap.png"} alt={"map"} width={500} height={300}></Image>
       </div>
-      <p>طراح وب سایت : سید محمد سبحان اولیائی</p>
     </main>
   );
 }
